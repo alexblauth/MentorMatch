@@ -1,44 +1,62 @@
 body {
-	
 	background: #fff;
 	padding: 0px;
 	font-family: 'Nunito', sans-serif;
+	text-decoration-color: #3caa3d;
 }
 
 input, button {
 	font-family: 'Nunito', sans-serif;
-
 }
 
+h1
+{
+	text-align: center;
+	padding-top: 0px;
+	font-size: 40px;
+}
+
+h3 {
+	padding: 5px;
+	margin : 10px;
+}
 .main-div {
-	width: 20%;
-	margin: 0px auto;
-	margin-top: 150px;
-	background: #fff;
+	width: 50%;
+	margin: 50px auto 0px;
+	background: #ffffff;
+	display: block;
+	/*border: 3px solid #63a1cc;*/
+	/*padding: 10px;*/
 }
 
 .main-div input {
+
 	display: block;
 	border: 1px solid #ccc;
-	border-radius:  5px;
+	border-radius:  4px;
 	background: #fff;
-	padding: 15px;
+	padding: 10px;
 	outline: none;
-	width: 100%;
-	margin-bottom: 20px;
+	width: 95%;
+	margin: 10px;
+	align-content: center;
+}
+button.link {
+	background:none;
+	align-items: center;
+	border:none;
 }
 
-.main-div button {
-	background:  #aaa;
+
+.main-div button1 {
+	background: #3caa3d;
 	color: #fff;
-	border: 0px;
-	border-radius: 5px;
-	padding: 15px;
+	border-radius: 20px;
+	padding: 10px 20px 10px 20px ;
+	font-size: 20px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
 
 }
-
-.main-div button:hover {
-	background: : #fff;
-	color: #aaa;
-	border: 1px solic #5d8ffc;
-};

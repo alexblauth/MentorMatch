@@ -6,20 +6,22 @@
 	<link rel="stylesheet" href="styles/login.css"/>
 	<meta name="google-signin-scope" content="profile email">
 	<meta name="google-signin-client_id" content="94097431082-u080o437bpmes48td7lh5ojcungl8hsn.apps.googleusercontent.com" >
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 </head>
 <body>
 	<div class ="main-div">
-		<h3>Firebase web loogin Example</h3>
-		<input id = "textEditEmail" type = "email" placeholder= "Email..."/>
-		<input id = "textEditPassword" type = "password" placeholder = "Password"/>
-		<button id = "buttonLogin"> Login </button>
-		<button id = "buttonSignup"> Sign up </button>
-		<div id = "googleButton" class = "g-signin2" data-onsuccess = "onSignin" ></div>
+		<h1>Sign In</h1>
+		<h3>Email</h3>
+		<input id = "textEditEmailLogin" type = "email"/>
+		<h3>Password</h3>
+		<input id = "textEditPasswordLogin" type = "password" />
+		<!--<button id = "buttonToSignUp" onclick="location.href='signup.html';"> Sign up</button>-->
+		<div align="center"><button1 id = "buttonLogin"> Login </button1></div>
+		<div id = "googleButton" class = "g-signin2" data-onsuccess = "onSignin" align="center"></div>
+		<div align="center"><button class = "link" id = "buttonToSignUp" onclick="location.href='signup.html';">FORGOT PASSWORD</button>/<button class = "link">CREATE ACCOUNT</button></div>
 	</div>
 	
-
 	<script src = "js/login.js"></script>
 
 

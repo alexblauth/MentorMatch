@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+	<meta charset = "utf-8">
+	<title>Firebase Login</title>
+	<link rel="stylesheet" href="style.css"/>
+	<meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="94097431082-mslt16ta6d8366kddi7lqm2685aht7jv.apps.googleusercontent.com" >
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+<body>
+	<div class ="main-div">
+		<h3>Firebase web loogin Example</h3>
+		<input id = "textEditEmail" type = "email" placeholder= "Email..."/>
+		<input id = "textEditPassword" type = "password" placeholder = "Password"/>
+		<button id = "buttonLogin"> Login </button>
+		<button id = "buttonSignup"> Sign up </button>
+		<div class = "g-signin2" data-onsuccess = "onSignIn"></div>
+	</div>
+	
+
+	<script src = "login.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+	
+	background: #fff;
+	padding: 0px;
+	font-family: 'Nunito', sans-serif;
+}
+
+input, button {
+	font-family: 'Nunito', sans-serif;
+
+}
+
+.main-div {
+	width: 20%;
+	margin: 0px auto;
+	margin-top: 150px;
+	background: #fff;
+}
+
+.main-div input {
+	display: block;
+	border: 1px solid #ccc;
+	border-radius:  5px;
+	background: #fff;
+	padding: 15px;
+	outline: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.main-div button {
+	background:  #aaa;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 15px;
+
+}
+
+.main-div button:hover {
+	background: : #fff;
+	color: #aaa;
+	border: 1px solic #5d8ffc;
+};

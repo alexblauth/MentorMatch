@@ -6,7 +6,8 @@
 // auth.onAuthStateChanged(firebaseUser => {});
 
     // Initialize Firebase
-    var config = {
+
+    const config = {
         apiKey: "AIzaSyCvsB1qBMOpUOG0XT9TM9ShTouhQjf_hZs",
         authDomain: "mentormatch-1551397019664.firebaseapp.com",
         databaseURL: "https://mentormatch-1551397019664.firebaseio.com",
@@ -16,13 +17,15 @@
     };
     firebase.initializeApp(config);
 
-    const textEditEmail = document.getElementById('textEditEmail');
-    const textEditPassword = document.getElementById('textEditPassword');
+    const textEditEmail = document.getElementById('textEditEmailLogin');
+    const textEditPassword = document.getElementById('textEditPasswordLogin');
     const buttonLogin = document.getElementById('buttonLogin');
-    const buttonSignUp = document.getElementById('buttonSignUp');
     const buttonGoogle = document.getElementById('googleButton');
     var clickedGoogleButton = false;
-
+    if (clickedGoogleButton)
+        console.log("true");
+    else
+        console.log("false");
     buttonGoogle.addEventListener('click', e=>
     {
         clickedGoogleButton = true;
@@ -38,39 +41,6 @@
             .catch(e => console.log(e.message));
     })
 
-    buttonSignUp.addEventListener('click', e =>
-    {
-        console.log("clicked button sign up!~");
-        const email = textEditEmail.value;
-        const password = textEditPassword.value;
-        const password2 = textEditPassword.value;
-        if (password == password2)
-        {
-            const auth = firebase.auth();
-            const answer = auth.createUserWithEmailAndPassword(email, password);
-            answer
-                .catch(e => console.log(e.message));
-        }
-    })
-
-    // buttonToSignup.addEventListener('click', e =>
-    // {
-    //     window.location.href = "signup.html";
-    // })
-
-    // buttonToSignup.onclick =
-    //     function () {
-    //         location.href = "signup.html";
-    //     };
-    // firebase.auth().onAuthStateChanged(firebaseUser =>
-    // {
-    //     if (firebaseUser)
-    //     {
-    //         console.log("Sign up successful");
-    //         // window.location.href = "index.html";
-    //     }
-    //     console.log("Not successful");
-    // });
 
     buttonLogin.addEventListener('click', e =>
     {
@@ -84,24 +54,29 @@
             .catch(e => console.log(e.message));
     })
 
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+
+    } else {
+        // No user is signed in.
+        console.log("not successful!");
+    }
+});
+
     function onSignin(googleUser)
     {
-        // Useful data for your client-side scripts:
         if (clickedGoogleButton)
         {
-            var profile = googleUser.getBasicProfile();
+            const profile = googleUser.getBasicProfile();
             console.log("ID: " + profile.getId()); // Don't send this directly to your server!
             console.log('Full Name: ' + profile.getName());
             console.log('Given Name: ' + profile.getGivenName());
             console.log('Family Name: ' + profile.getFamilyName());
             console.log("Image URL: " + profile.getImageUrl());
             console.log("Email: " + profile.getEmail());
-            const auth = firebase.auth();
-            const answer = auth.
-            // The ID token you need to pass to your backend:
-            // var id_token = googleUser.getAuthResponse().id_token;
-            // console.log("ID Token: " + id_token);
+
+
+            alert('Successfully logged in!\nHello ' + profile.getName());
             window.location.href = "index.html";
         }
     }
-

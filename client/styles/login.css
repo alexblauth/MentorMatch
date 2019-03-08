@@ -3,6 +3,7 @@ body {
 	padding: 0px;
 	font-family: 'Nunito', sans-serif;
 	text-decoration-color: #3caa3d;
+	color: #3caa3d;
 }
 
 input, button {
@@ -25,7 +26,8 @@ h3 {
 	margin: 50px auto 0px;
 	background: #ffffff;
 	display: block;
-	/*border: 3px solid #63a1cc;*/
+	border: 3px solid #3caa3d;
+
 	/*padding: 10px;*/
 }
 
@@ -45,6 +47,8 @@ button.link {
 	background:none;
 	align-items: center;
 	border:none;
+	color: #3caa3d;
+	margin: 20px;
 }
 
 
@@ -54,9 +58,19 @@ button.link {
 	border-radius: 20px;
 	padding: 10px 20px 10px 20px ;
 	font-size: 20px;
-	width: 50%;
+	width: 80%;
+	margin-left: 20px;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
+	margin-top: 30px;
+}
+button1:hover {
+	background-color: #8e3942;
+}
 
+.buttonani:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }

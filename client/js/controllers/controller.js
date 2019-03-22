@@ -25,7 +25,7 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
       //$scope.detailedInfo._id++;
       Profiles.update($scope.detailedInfo)
               .then(function(response) {
-                //location.reload();
+                location.reload();
               }, function(error) {
                 $scope.error = 'Unable to add listing!' + error;
               });

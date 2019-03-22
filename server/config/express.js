@@ -23,8 +23,8 @@ module.exports.init = function() {
   /*Serve static files */
   app.use('/', express.static(__dirname + '/../../client'));
 
-  /* Use the listings router for requests to the api */
-  app.use('/api/listings', router);
+  /* Use the profiles router for requests to the api */
+  app.use('/api/profiles', router);
 
   /* Go to homepage for all routes not specified */
   app.all('/*', function(req, res) {

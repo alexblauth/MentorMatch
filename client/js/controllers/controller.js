@@ -1,28 +1,40 @@
-angular.module('listings').controller('ListingsController', ['$scope', 'Listings',
-  function($scope, Listings) {
-    /* Get all the listings, then bind it to the scope */
-    Listings.getAll().then(function(response) {
-      $scope.listings = response.data;
+angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles',
+  function($scope, Profiles) {
+    /* Get all the profiles, then bind it to the scope */
+    Profiles.getAll().then(function(response) {
+      $scope.profiles = response.data;
     }, function(error) {
-      console.log('Unable to retrieve listings:', error);
+      console.log('Unable to retrieve profiles:', error);
     });
 
     $scope.detailedInfo = undefined;
 
     $scope.addListing = function() {
-        /* Save the article using the Listings factory */
-        Listings.create($scope.newListing)
+        /* Save the article using the Profiles factory */
+        Profiles.create($scope.newListing)
                 .then(function(response) {
                   location.reload();
                 }, function(error) {
                   $scope.error = 'Unable to add listing!' + error;
                 });
-      $scope.listings.push($scope.newListing);
+      $scope.profiles.push($scope.newListing);
       $scope.newListing = {};
     };
 
+    $scope.updateListing = function() {
+      //$scope.detailedInfo._id++;
+      Profiles.update($scope.detailedInfo)
+              .then(function(response) {
+                //location.reload();
+              }, function(error) {
+                $scope.error = 'Unable to add listing!' + error;
+              });
+              $scope.profiles.push($scope.detailedInfo);
+              $scope.detailedInfo = {};
+    };
+
     $scope.deleteListing = function(id) {
-      Listings.delete(id)
+      Profiles.delete(id)
       .then(function(response) {
         location.reload();
       }, function(error) {
@@ -31,10 +43,10 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     };
 
     $scope.showDetails = function(index) {
-      $scope.detailedInfo = $scope.listings[index];
+      $scope.detailedInfo = $scope.profiles[index];
     };
   }
 
 
-  
+
 ]);

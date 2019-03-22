@@ -18,7 +18,7 @@ th {
 
 #infoArea {
   background-color: #31444b;
-  color:white;
+  color:orange;
 
 }
 
@@ -47,7 +47,7 @@ th {
 }
 .form-check-label{
   font-size: 14px;
-  
+
 }
 .bottom-buffer{
   margin-bottom: 20px;

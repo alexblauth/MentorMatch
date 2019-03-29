@@ -38,43 +38,42 @@ exports.read = function(req, res) {
 
 /* Update a profile */
 exports.update = function(req, res) {
-  var profile = req.profile;
-  profile.ID = req.body.ID;
-  profile.name = req.body.name;
 
-  profile.ethnicity = req.body.ethnicity;
-  profile.ethnicity.score = req.body.ethnicity.score;
+    /*unimplemented profile attributes are commented out*/
+    var profile = new Profile();
+    profile.name = req.body.name;
+    profile.ID = req.body.ID;
+    profile.ethnicity = req.body.ethnicity;
+    //profile.ethnicity.score = req.body.ethnicity.score;
+    profile.gender = req.body.gender;
+    //profile.gender.score = req.body.gender.score;
+    profile.industry = req.body.industry;
+    //profile.industry.score = req.body.industry.score;
+    profile.bio = req.body.bio;
+    //profile.isMentor = req.body.isMentor;
+    //profile.mentorStrengths = req.body.mentorStrengths;
+    //profile.mentorStrengths.score = req.body.mentorStrengths.score;
+    //profile.isMentee = req.body.isMentee;
+    //profile.menteeGoals = req.body.menteeGoals;
+    //profile.menteeGoals.score = req.body.menteeGoals.score;
+    profile.language = req.body.language;
+    //profile.language.score = req.body.language.score;
+    //profile.location.country = req.body.location.country;
+    //profile.location.state = req.body.location.state;
+    //profile.location.city = req.body.location.city;
+    //profile.location.score = req.body.location.score;
 
-  profile.industry = req.body.industry;
-  profile.industry.score = req.body.industry.score;
+    //console.log(req.body._id);  //For debugging
+  	profile.save(function(err) {
+        if(err) {
+          console.log(err);
+          res.status(404).send(err);
+        } else {
+          res.json(profile);
+        }
+  	});
 
-  profile.gender = req.body.gender;
-  profile.gender.score = req.body.gender.score;
 
-  profile.bio = req.body.bio;
-
-  profile.isMentor = req.body.isMentor;
-  profile.mentorStrengths = req.body.mentorStrengths;
-  profile.mentorStrengths.score = req.body.mentorStrengths.score;
-
-  profile.isMentee = req.body.isMentee;
-  profile.menteeGoals = req.body.menteeGoals;
-  profile.menteeGoals.score = req.body.menteeGoals.score;
-
-  profile.language = req.body.language;
-  profile.language.score = req.body.language.score;
-
-  profile.location = req.body.location;
-  profile.location.score = req.body.location.score;
-
-  profile.save(function(err) {
-    if(err) {
-      console.log(err);
-      res.status(404).send(err);
-    } else {
-      res.json(profile);
-    }
-  });
 };
 
 /* Delete a profile */

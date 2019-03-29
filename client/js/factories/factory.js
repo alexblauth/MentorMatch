@@ -8,9 +8,9 @@ angular.module('profiles', []).factory('Profiles', function($http) {
   	  return $http.post('/api/profiles', profile);
       },
 
-//Update function needed
+    //Update function
     update: function(profile) {
-      return $http.put('/api/profiles', profile);
+      return $http.put('/api/profiles/', profile);
     },
 
     delete: function(id) {

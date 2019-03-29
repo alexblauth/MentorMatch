@@ -1,9 +1,11 @@
+//var myVar = require('../../server/controllers/server.controller.js');
 angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles',
   function($scope, Profiles) {
     /* Get all the profiles, then bind it to the scope */
+    var prof = this;
     Profiles.getAll().then(function(response) {
       $scope.profiles = response.data;
-    }, function(error) {
+      }, function(error) {
       console.log('Unable to retrieve profiles:', error);
     });
 
@@ -22,16 +24,25 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
     };
 
     $scope.updateListing = function() {
-      //$scope.detailedInfo._id++;
+      console.log($scope.detailedInfo.name);
+      /* Create new date via update */
       Profiles.update($scope.detailedInfo)
+              .then(function(response) {
+                console.log(response);
+                //location.reload();
+              }, function(error) {
+                $scope.error = 'Unable to add lyour person isting!' + error;
+              });
+      var id = $scope.detailedInfo._id;
+      /* Delete old data */
+      Profiles.delete(id)
               .then(function(response) {
                 location.reload();
               }, function(error) {
-                $scope.error = 'Unable to add listing!' + error;
+                $scope.error = 'Unable to delete listing!' + error;
               });
-              $scope.profiles.push($scope.detailedInfo);
-              $scope.detailedInfo = {};
     };
+
 
     $scope.deleteListing = function(id) {
       Profiles.delete(id)

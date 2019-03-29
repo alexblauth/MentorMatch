@@ -1,13 +1,13 @@
 /* Import mongoose and define any variables needed to create the schema */
-var mongoose = require('mongoose'), 
+var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 /* Create your schema */
 var profileSchema = new Schema({
   ID: {
-    type: String, 
+    type: String,
     required: true
-  }, 
+  },
   name:{
     type:String,
     score:Number

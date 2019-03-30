@@ -30,17 +30,18 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
               .then(function(response) {
                 console.log(response);
                 //location.reload();
+                Profiles.delete(id)
+                        .then(function(response) {
+                          location.reload();
+                        }, function(error) {
+                          $scope.error = 'Unable to delete listing!' + error;
+                        });
               }, function(error) {
                 $scope.error = 'Unable to add lyour person isting!' + error;
               });
       var id = $scope.detailedInfo._id;
       /* Delete old data */
-      Profiles.delete(id)
-              .then(function(response) {
-                location.reload();
-              }, function(error) {
-                $scope.error = 'Unable to delete listing!' + error;
-              });
+
     };
 
 

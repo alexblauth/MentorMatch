@@ -25,11 +25,13 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
 
     $scope.updateListing = function() {
       console.log($scope.detailedInfo.name);
+      var id = $scope.detailedInfo._id;
       /* Create new date via update */
       Profiles.update($scope.detailedInfo)
               .then(function(response) {
                 console.log(response);
                 //location.reload();
+                /* Delete old data */
                 Profiles.delete(id)
                         .then(function(response) {
                           location.reload();
@@ -39,8 +41,8 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
               }, function(error) {
                 $scope.error = 'Unable to add lyour person isting!' + error;
               });
-      var id = $scope.detailedInfo._id;
-      /* Delete old data */
+
+
 
     };
 

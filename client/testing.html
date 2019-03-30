@@ -36,11 +36,21 @@
             <h2>Add New Listing</h2>
             ID: <input type="text" ng-model="newListing.ID" /><br />
             Name: <input type="text" ng-model="newListing.name" /><br />
-            Ethnicity: <input type="text" ng-model="newListing.ethnicity" /><br />
-            Gender: <input type="text" ng-model="newListing.gender" /><br />
-            Industry: <input type="text" ng-model="newListing.industry" /><br />
+            Ethnicity: <input type="text" ng-model="newListing.ethnicity" />
+            Score: <input type="text" ng-model="newListing.ethnicity.score" /><br/>
+            Gender: <input type="text" ng-model="newListing.gender" />
+            Score: <input type="text" ng-model="newListing.gender.score" /><br/>
+            Industry: <input type="text" ng-model="newListing.industry" />
+            Score: <input type="text" ng-model="newListing.industry.score" /><br/>
             Bio: <input type="text" ng-model="newListing.bio" /><br />
-            Language: <input type="text" ng-model="newListing.language" /><br />
+            Language: <input type="text" ng-model="newListing.language" />
+            Score: <input type="text" ng-model="newListing.language.score" /><br/>
+            Country: <input type="text" ng-model="newListing.location.country" /><br/>
+            State: <input type="text" ng-model="newListing.location.state" /><br/>
+            City: <input type="text" ng-model="newListing.location.city" />
+            Score: <input type="text" ng-model="newListing.location.country" /><br/>
+            Is Mentee? <input type="checkbox" ng-model="newListing.isMentee" /><br/>
+            Is Mentor? <input type="checkbox" ng-model="newListing.isMentor" /><br/>
             <button class="btn btn-primary" ng-click="addListing()">Add Listing</button>
           </form>
         </div>
@@ -50,21 +60,24 @@
               <h2>Update Listing</h2>
               ID: <input type="text" ng-model="detailedInfo.ID" /><br />
               Name: <input type="text" ng-model="detailedInfo.name" /><br />
-              Ethnicity: <input type="text" ng-model="detailedInfo.ethnicity" /><br />
-              Gender: <input type="text" ng-model="detailedInfo.gender" /><br />
-              Industry: <input type="text" ng-model="detailedInfo.industry" /><br />
+              Ethnicity: <input type="text" ng-model="detailedInfo.ethnicity" />
+              Score: <input type="number" ng-model="detailedInfo.ethnicity.score" /><br/>
+              Gender: <input type="text" ng-model="detailedInfo.gender" />
+              Score: <input type="text" ng-model="detailedInfo.gender.score" /><br/>
+              Industry: <input type="text" ng-model="detailedInfo.industry" />
+              Score: <input type="text" ng-model="detailedInfo.industry.score" /><br/>
               Bio: <input type="text" ng-model="detailedInfo.bio" /><br />
-              Language: <input type="text" ng-model="detailedInfo.language" /><br />
-              <button class="btn btn-primary" ng-click="updateListing()">Update Listing</button>
-              <input type="text" ng-model="detailedInfo._id">
+              Language: <input type="text" ng-model="detailedInfo.language" />
+              Score: <input type="text" ng-model="detailedInfo.language.score" /><br/>
+              Country: <input type="text" ng-model="detailedInfo.location.country" /><br/>
+              State: <input type="text" ng-model="detailedInfo.location.state" /><br/>
+              City: <input type="text" ng-model="detailedInfo.location.city" />
+              Score: <input type="text" ng-model="detailedInfo.location.country" /><br/>
+              Is Mentee? <input type="checkbox" ng-model="detailedInfo.isMentee" /><br/>
+              Is Mentor? <input type="checkbox" ng-model="detailedInfo.isMentor" /><br/>
+              <button class="btn btn-primary" ng-click="updateListing()">Update Listing</button><br/>
+              ._id: <input type="text" ng-model="detailedInfo._id">
             </form>
-            <!--<h2>Detailed Information</h2>
-            <h4>{{detailedInfo.name}}</h4>
-            <p>Ethnicity: {{detailedInfo.ethnicity}}</p>
-            <p>Gender: {{detailedInfo.gender}}</p>
-            <p>Industry: {{detailedInfo.industry}}</p>
-            <p>Bio: {{detailedInfo.bio}}</p>
-            <p>language: {{detailedInfo.language}}</p>-->
           </div>
         </div>
       </div>

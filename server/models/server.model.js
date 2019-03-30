@@ -9,8 +9,7 @@ var profileSchema = new Schema({
     required: true
   },
   name:{
-    type:String,
-    score:Number
+    type:String
   },
   ethnicity:{
     type:String,

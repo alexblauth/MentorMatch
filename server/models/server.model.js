@@ -12,38 +12,57 @@ var profileSchema = new Schema({
     type:String
   },
   ethnicity:{
-    type:String,
-    score:Number
+    type:String
+  },
+  ethScore: {
+    type:Number
   },
   gender: {
-    type:String,
-    score:Number
+    type:String
+  },
+  genScore: {
+    type:Number
   },
   industry:{
-    type:String,
-    score:Number
+    type:String
+  },
+  indScore:{
+    type:Number
   },
   bio:String,
   isMentor:Boolean,
   mentorStrengths:{
-    type:String,
-    score:Number
+    type:String
+  },
+  strScore:{
+    type:Number
   },
   isMentee:Boolean,
   menteeGoals:{
-    type:String,
-    score:Number
+    type:String
+  },
+  goaScore:{
+    type:Number
   },
   language:{
-    type:String,
-    score:Number
+    type:String
+  },
+  lanScore:{
+    type:Number
   },
   location:{
-    country:String,
-    state:String,
-    city:String,
-    score:Number
-
+    country:{
+      type:String
+    },
+    state:{
+      type:String
+    },
+    city:{
+      type:String
+    },
+  },
+  locScore:{
+    type:Number
   },
 
   created_at: Date,

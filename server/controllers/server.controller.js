@@ -44,24 +44,24 @@ exports.update = function(req, res) {
     profile.name = req.body.name;
     profile.ID = req.body.ID;
     profile.ethnicity = req.body.ethnicity;
-    //profile.ethnicity.score = req.body.ethnicity.score;
+    profile.ethScore = req.body.ethScore;
     profile.gender = req.body.gender;
-    //profile.gender.score = req.body.gender.score;
+    profile.genScore = req.body.genScore;
     profile.industry = req.body.industry;
-    //profile.industry.score = req.body.industry.score;
+    profile.indScore = req.body.indScore;
     profile.bio = req.body.bio;
-    //profile.isMentor = req.body.isMentor;
+    profile.isMentor = req.body.isMentor;
     //profile.mentorStrengths = req.body.mentorStrengths;
     //profile.mentorStrengths.score = req.body.mentorStrengths.score;
-    //profile.isMentee = req.body.isMentee;
+    profile.isMentee = req.body.isMentee;
     //profile.menteeGoals = req.body.menteeGoals;
-    //profile.menteeGoals.score = req.body.menteeGoals.score;
+    //profile.goaScore = req.body.goaScore;
     profile.language = req.body.language;
-    //profile.language.score = req.body.language.score;
-    //profile.location.country = req.body.location.country;
-    //profile.location.state = req.body.location.state;
-    //profile.location.city = req.body.location.city;
-    //profile.location.score = req.body.location.score;
+    profile.lanScore = req.body.lanScore;
+    profile.location.country = req.body.location.country;
+    profile.location.state = req.body.location.state;
+    profile.location.city = req.body.location.city;
+    profile.locScore = req.body.locScore;
 
     //console.log(req.body._id);  //For debugging
   	profile.save(function(err) {

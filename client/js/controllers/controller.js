@@ -25,7 +25,18 @@ angular.module('profiles').controller('ProfilesController', ['$scope', 'Profiles
 
     $scope.updateListing = function() {
       console.log($scope.detailedInfo.name);
-      var id = $scope.detailedInfo._id;
+      var id = 0;
+      
+
+      /* we will want to update by email once thats in the schema
+      just change the value.name to value.email*/
+      angular.forEach($scope.profiles, function(value, key){
+        if(value.name == $scope.detailedInfo.name)
+          id = value._id;
+        });
+      
+
+
       /* Create new date via update */
       Profiles.update($scope.detailedInfo)
               .then(function(response) {

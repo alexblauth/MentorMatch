@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5155d1-89c0-416c-9f35-386646453bef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/js/controllers/formController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/twoWayRating.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/js/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/controllers/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/js/signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/server.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/server.model.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="838" lean-forward="true" selection-start-line="838" selection-end-line="838" />
+            <state relative-caret-position="620">
+              <caret line="583" column="78" lean-forward="true" selection-start-line="583" selection-start-column="78" selection-end-line="583" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -41,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="114" column="21" lean-forward="true" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+            <state relative-caret-position="139">
+              <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -71,9 +64,10 @@
       <find>customB</find>
       <find>console.log(</find>
       <find>name</find>
-      <find>login</find>
       <find>Listing</find>
       <find>emailUser</find>
+      <find>login</find>
+      <find>email</find>
     </findStrings>
     <replaceStrings>
       <replace>google</replace>
@@ -110,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,11 +174,12 @@
       <updated>1553270818200</updated>
       <workItem from="1553270820747" duration="14330000" />
       <workItem from="1553956702610" duration="4544000" />
+      <workItem from="1554130174513" duration="802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20220000" />
+    <option name="totallyTimeSpent" value="21350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -196,10 +191,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
+    <frame x="0" y="23" width="1327" height="799" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15745129" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15696783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,7 +206,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26155582" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2602546" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -271,15 +266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="838" lean-forward="true" selection-start-line="838" selection-end-line="838" />
+        <state relative-caret-position="620">
+          <caret line="583" column="78" lean-forward="true" selection-start-line="583" selection-start-column="78" selection-end-line="583" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="114" column="21" lean-forward="true" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        <state relative-caret-position="139">
+          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
         </state>
       </provider>
     </entry>

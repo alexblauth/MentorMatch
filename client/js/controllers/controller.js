@@ -40,10 +40,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 
     $scope.login = function(emailParam){
       $scope.currentUserEmail = emailParam; //Set currentUserEmail scope variable
-      email = emailParam;
       console.log("We are in angular login function now!");
       console.log("Email passed in: " + emailParam);
-      emailUser = emailParam;
       var emailAlreadyInDB = false;
 
 
@@ -78,8 +76,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       //             +email
       //             + "&subject=Feedback!"
       //             + "&body=Mentor"
-      // ;
-
+      // ;s
+      var email = "otherMentorOrMentee@email.com";
       var linkto = 'mailto:' + email + '?subject=[MentorMatch]&body=Mentor/Mentee excelled at:%0A%0A%0AThere was room for improvement with:';
 
       window.open(linkto);

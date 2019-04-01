@@ -1,10 +1,39 @@
 #pageTitle {
-  color: #2A363B;
-  margin-left: 10px;
+  color: #EEEEEE;
+  font-size: 50px;
+}
+
+#profileButton {
+  
+  font-size: 30px;
 }
 
 body {
+  background-color: #2A363B;
+}
+/* .card-body{
   background-color: #EEEEEE;
+
+} */
+p{
+  color:White;
+}
+hr{
+  border-top: 3px solid #EEEEEE;
+  width: 35%;
+  margin-left:0;  
+  text-align:left;
+}
+h5{
+  color: #e84a5f;
+  font-size: 30px;
+}
+h1{
+  font-size:50px;
+  color:#EEEEEE;
+}
+h2{
+  color: #e84a5f;
 }
 
 th {
@@ -22,8 +51,8 @@ th {
 
 }
 
-#addArea h3 {
-  color: #222;
+#addArea h1 {
+  color: #e84a5f;
 }
 
 #searchBar {
@@ -51,4 +80,54 @@ th {
 }
 .bottom-buffer{
   margin-bottom: 20px;
+}
+
+.top-buffer{
+  margin-top: 20px;
+}
+
+.bottom-buffer-large{
+  margin-bottom: 50px;
+}
+.bold{
+  font-weight: bold;
+}
+
+
+/* Google Login Button Formatting */
+@import url('https://fonts.googleapis.com/css?family=Robot');
+
+#customBtn {
+  display: inline-block;
+  background: #ffffff;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url(' /identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 40px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: left;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
 }

@@ -18,29 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="256">
+              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/anonymousindex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16893">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="184" column="7" lean-forward="true" selection-start-line="184" selection-start-column="7" selection-end-line="184" selection-end-column="7" />
+            <state relative-caret-position="157">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -56,8 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Email passed</find>
-      <find>emailParam</find>
       <find>push</find>
       <find>emailuser</find>
       <find>Listing</find>
@@ -76,20 +65,23 @@
       <find>googlebut</find>
       <find>google</find>
       <find>local stora</find>
-      <find>sign in</find>
       <find>custom</find>
-      <find>logout</find>
       <find>loggedin</find>
       <find>logou</find>
       <find>sig</find>
       <find>logoutBtn</find>
-      <find>login</find>
       <find>profile</find>
       <find>none</find>
+      <find>hidden</find>
+      <find>login</find>
+      <find>logout</find>
+      <find>sign in</find>
+      <find>gSign</find>
     </findStrings>
     <replaceStrings>
       <replace>google</replace>
       <replace>Listings</replace>
+      <replace>none</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -105,9 +97,9 @@
         <option value="$PROJECT_DIR$/client/test.html" />
         <option value="$PROJECT_DIR$/client/js/login.js" />
         <option value="$PROJECT_DIR$/client/email.html" />
-        <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/anonymousindex.html" />
         <option value="$PROJECT_DIR$/client/js/controllers/controller.js" />
+        <option value="$PROJECT_DIR$/client/index.html" />
       </list>
     </option>
   </component>
@@ -151,6 +143,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -185,12 +178,12 @@
       <workItem from="1554592537229" duration="2767000" />
       <workItem from="1554662912105" duration="244000" />
       <workItem from="1554678301607" duration="25000" />
-      <workItem from="1554678371028" duration="3495000" />
+      <workItem from="1554678371028" duration="4156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31617000" />
+    <option name="totallyTimeSpent" value="32278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,13 +312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/anonymousindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16893">
@@ -335,8 +321,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="184" column="7" lean-forward="true" selection-start-line="184" selection-start-column="7" selection-end-line="184" selection-end-column="7" />
+        <state relative-caret-position="157">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
         </state>
       </provider>
     </entry>

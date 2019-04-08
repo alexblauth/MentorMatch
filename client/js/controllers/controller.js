@@ -318,6 +318,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
         localStorage['useremail'] = "";
         document.getElementById('customBtn').style.display= "block";
         document.getElementById('logoutBtn').style.display= "none";
+        localStorage.clear();
       });
     }
 
@@ -348,8 +349,6 @@ function attachSignin(element)
                 var email = googleUser.getBasicProfile().getEmail();  //Retrieve current user email
                 var name = googleUser.getBasicProfile().getName();  //Retrieve current user email
                 angular.element($('#MainWrap')).scope().login(email, name); //Pass email into angular function (login)
-
-
 
             }, function (error)
             {

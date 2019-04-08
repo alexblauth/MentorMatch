@@ -2,7 +2,16 @@
 window.onload = function() {
 
    console.log("local storage has: " + localStorage.getItem('useremail'));
-
+  if (localStorage['useremail'] == "" || !localStorage['useremail'])
+  {
+    document.getElementById('customBtn').style.display= "block";
+    document.getElementById('logoutBtn').style.display= "none";
+  }
+  else
+  {
+    document.getElementById('customBtn').style.display= "none";
+    document.getElementById('logoutBtn').style.display= "block";
+  }
     // ...
 }
 angular.module('listings').controller('ListingsController', ['$scope', 'Listings',
@@ -11,6 +20,11 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 
     /* Unique identifier for current user */
     $scope.jobOther;
+
+
+
+
+
     $scope.detailedInfo = {
       email: "",
       name: {
@@ -152,10 +166,10 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     {
       $scope.detailedInfo.email = emailParam; //Set currentUserEmail scope variable
       $scope.detailedInfo.name.value = nameParam;
-
+      $scope.googlebuttontext = "Log out";
 
       localStorage.setItem('useremail', emailParam);
-      localStorage[useremail] = emailParam;
+      localStorage['useremail'] = emailParam;
 
 
       console.log("We are in angular login function now!");
@@ -164,7 +178,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       console.log("Name passed in: " + nameParam);
 
       var emailAlreadyInDB = false;
-
+      document.getElementById('customBtn').style.display= "none";
+      document.getElementById('logoutBtn').style.display= "block";
 
       angular.forEach($scope.listings, function (value, key)
       {
@@ -295,6 +310,17 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       }
     }
 
+    $scope.logout = function()
+    {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+        localStorage['useremail'] = "";
+        document.getElementById('customBtn').style.display= "block";
+        document.getElementById('logoutBtn').style.display= "none";
+      });
+    }
+
     // console.log(localStorage.getItem('email'));
   }
 ]);
@@ -322,12 +348,14 @@ function attachSignin(element)
                 var email = googleUser.getBasicProfile().getEmail();  //Retrieve current user email
                 var name = googleUser.getBasicProfile().getName();  //Retrieve current user email
                 angular.element($('#MainWrap')).scope().login(email, name); //Pass email into angular function (login)
-                
+
+
 
             }, function (error)
             {
                 alert(JSON.stringify(error, undefined, 2));
             });
+
 }
 
 startApp();

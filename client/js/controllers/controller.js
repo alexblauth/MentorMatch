@@ -2,7 +2,7 @@
 window.onload = function() {
 
    console.log("local storage has: " + localStorage.getItem('useremail'));
-  if (localStorage['useremail'] == "" || !localStorage['useremail'])
+  if (localStorage['useremail'] == "" || localStorage['useremail'] == null)
   {
     document.getElementById('customBtn').style.display= "block";
     document.getElementById('logoutBtn').style.display= "none";
@@ -310,6 +310,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       }
     }
 
+    //log out function call here
     $scope.logout = function()
     {
       var auth2 = gapi.auth2.getAuthInstance();

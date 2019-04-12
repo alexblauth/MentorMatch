@@ -789,18 +789,32 @@
                             <div class = "card-body" >
                                 <!--This is blank rn-->
                                 <div class="tableWrapper">
-                                    <table class="table table-striped table-hover">
+                                    <table class="table  table-hover">
                                         <tr>
                                             <th></th>
                                             <th>Name</th>
                                             <th></th>
                                         </tr>
-                                        <tr ng-repeat="Profile in listings" >
-                                            <!--<td ng-click="deleteListing(Profile._id)"><span style="color: red;" class="glyphicon glyphicon-remove"></span></td>-->
-                                            <td>{{$index + 1}}</td>
-                                            <td>{{Profile.name.value}}</td>
-                                            <td><button ng-click = "sendEmail(Profile.email)">Send Email</button></td>
-                                        </tr>
+                                          <tr ng-repeat-start="Profile in listings">
+                                            
+                                              <!--<td ng-click="deleteListing(Profile._id)"><span style="color: red;" class="glyphicon glyphicon-remove"></span></td>-->
+                                              <td>{{$index + 1}}</td>
+                                              <td><button class = "btn"data-toggle="collapse"data-target="#userInfo--{{$index}}">{{Profile.name.value}}</button></td>
+
+                                              <td><button ng-click = "sendEmail(Profile.email)">Send Email</button></td>
+                                          </tr>
+                                          <tr ng-repeat-end class ="collapse" id="userInfo--{{$index}}">
+                                            <td colspan=3>
+                                              <p>Profession: {{Profile.industry.value}}</p>
+                                              <p>Mentor Strength: {{Profile.mentorStrength1.value}}</p>
+                                              <p>Mentor Strength: {{Profile.mentorStrength2.value}}</p>
+                                              <p>Mentor Strength: {{Profile.mentorStrength3.value}}</p>
+                                              <p>Bio: {{Profile.bio}}</p>
+
+
+                                            </td>
+                                          </tr>
+                                          
                                     </table>
                                 </div>
                             </div>

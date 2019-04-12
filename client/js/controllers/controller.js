@@ -199,6 +199,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       if (!emailAlreadyInDB)
       {
         console.log("Email not found in DB. Adding listing now...");
+        $scope.detailedInfo.name.value=nameParam;
         var newListing = {
           email: emailParam,
           name: {

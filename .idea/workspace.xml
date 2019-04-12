@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d5155d1-89c0-416c-9f35-386646453bef" name="Default Changelist" comment="" />
+    <list default="true" id="7d5155d1-89c0-416c-9f35-386646453bef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/controllers/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/controllers/controller.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="1276">
+              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="194">
+              <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -43,41 +47,60 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>push</find>
-      <find>emailuser</find>
-      <find>Listing</find>
-      <find>_id</find>
-      <find>this is</find>
-      <find>localstor</find>
-      <find>localS</find>
-      <find>local</find>
-      <find>loca</find>
-      <find>useremail</find>
-      <find>detail</find>
-      <find>sign</find>
-      <find>gSignInWrapper</find>
-      <find>ng-</find>
-      <find>Sig</find>
-      <find>googlebut</find>
-      <find>google</find>
-      <find>local stora</find>
-      <find>custom</find>
-      <find>loggedin</find>
-      <find>logou</find>
-      <find>sig</find>
-      <find>logoutBtn</find>
-      <find>profile</find>
-      <find>none</find>
-      <find>hidden</find>
       <find>login</find>
-      <find>logout</find>
-      <find>sign in</find>
-      <find>gSign</find>
+      <find>sExpr</find>
+      <find>top</find>
+      <find>statement</find>
+      <find>Assign</find>
+      <find>VarResult</find>
+      <find>result</find>
+      <find>env</find>
+      <find>varEval</find>
+      <find>*)</find>
+      <find>(*</find>
+      <find>t</find>
+      <find>block</find>
+      <find>p2</find>
+      <find>p3</find>
+      <find>pW</find>
+      <find>expr</find>
+      <find>While</find>
+      <find>while</find>
+      <find>codeT</find>
+      <find>evalOp2</find>
+      <find>evalExpr</find>
+      <find>str</find>
+      <find>evalCode</find>
+      <find>p1</find>
+      <find>testGen</find>
+      <find>Expr</find>
+      <find>Op2</find>
+      <find>gender</find>
+      <find>ethnicity</find>
     </findStrings>
     <replaceStrings>
       <replace>google</replace>
       <replace>Listings</replace>
       <replace>none</replace>
+      <replace>detail</replace>
+      <replace>Func</replace>
+      <replace>statBlock</replace>
+      <replace>result</replace>
+      <replace>line</replace>
+      <replace>queueLine</replace>
+      <replace>input</replace>
+      <replace>test</replace>
+      <replace>testOper</replace>
+      <replace>Print</replace>
+      <replace>sexualOrientation</replace>
+      <replace>gender</replace>
+      <replace>industry</replace>
+      <replace>mentorStrength1</replace>
+      <replace>mentorStrength2</replace>
+      <replace>mentorStrength3</replace>
+      <replace>mentorGoal1</replace>
+      <replace>mentorGoal2</replace>
+      <replace>mentorGoal3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -94,16 +117,17 @@
         <option value="$PROJECT_DIR$/client/js/login.js" />
         <option value="$PROJECT_DIR$/client/email.html" />
         <option value="$PROJECT_DIR$/client/anonymousindex.html" />
-        <option value="$PROJECT_DIR$/client/js/controllers/controller.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/../Study/COP4020/COP4020-Assignment3-BC-in-OCaml-master/bc.ml" />
+        <option value="$PROJECT_DIR$/client/js/controllers/controller.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="171" />
-    <option name="y" value="120" />
-    <option name="width" value="1659" />
-    <option name="height" value="867" />
+    <option name="x" value="44" />
+    <option name="y" value="23" />
+    <option name="width" value="1445" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -130,6 +154,19 @@
               <item name="MentorMatch" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Desktop/MentorMatch" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MentorMatch" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Desktop/MentorMatch" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MentorMatch" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Desktop/MentorMatch" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -175,11 +212,14 @@
       <workItem from="1554662912105" duration="244000" />
       <workItem from="1554678301607" duration="25000" />
       <workItem from="1554678371028" duration="4317000" />
+      <workItem from="1554752268883" duration="5996000" />
+      <workItem from="1554829030001" duration="8437000" />
+      <workItem from="1555091968260" duration="1089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32439000" />
+    <option name="totallyTimeSpent" value="53020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -191,9 +231,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="120" width="1659" height="867" extended-state="0" />
+    <frame x="44" y="23" width="1445" height="953" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18009768" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -205,7 +246,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29548386" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.39256677" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -307,24 +348,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/anonymousindex.html">
+    <entry file="file://$PROJECT_DIR$/client/anonymousindex.html" />
+    <entry file="file://$PROJECT_DIR$/../Study/COP4020/COP4020-Assignment3-BC-in-OCaml-master/bc.ml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16893">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="174">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="1276">
+          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/controllers/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
         </state>
       </provider>
     </entry>

@@ -781,7 +781,7 @@
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <button id = "matchesButton" class="btn bold salmon" data-toggle="collapse" data-target="#matchCollapse" aria-expanded="false" aria-controls="collapseOne">
-                                  Matches
+                                  Potential Mentors
                                 </button>
                               </h5>
                           </div>
@@ -799,17 +799,21 @@
                                             
                                               <!--<td ng-click="deleteListing(Profile._id)"><span style="color: red;" class="glyphicon glyphicon-remove"></span></td>-->
                                               <td>{{$index + 1}}</td>
-                                              <td><button class = "btn"data-toggle="collapse"data-target="#userInfo--{{$index}}">{{Profile.name.value}}</button></td>
+                                              <td><button ng-click= "displayProfile($index, Profile, mentorString)" class = "btn"data-toggle="collapse"data-target="#userInfo--{{$index}}">{{Profile.name.value}}</button></td>
 
                                               <td><button ng-click = "sendEmail(Profile.email)">Send Email</button></td>
                                           </tr>
                                           <tr ng-repeat-end class ="collapse" id="userInfo--{{$index}}">
                                             <td colspan=3>
-                                              <p>Profession: {{Profile.industry.value}}</p>
-                                              <p>Mentor Strength: {{Profile.mentorStrength1.value}}</p>
-                                              <p>Mentor Strength: {{Profile.mentorStrength2.value}}</p>
-                                              <p>Mentor Strength: {{Profile.mentorStrength3.value}}</p>
-                                              <p>Bio: {{Profile.bio}}</p>
+                                              <p id="mentor-{{$index}}-job"><b>Profession:</b> {{Profile.industry.value}}</p>
+                                              <p id="mentor-{{$index}}-strength1"><b>Mentor Strength</b>: {{Profile.mentorStrength1.value}}</p>
+                                              <p id="mentor-{{$index}}-strength2"><b>Mentor Strength</b>: {{Profile.mentorStrength2.value}}</p>
+                                              <p id="mentor-{{$index}}-strength3"><b>Mentor Strength</b>: {{Profile.mentorStrength3.value}}</p>
+                                              <p id="mentor-{{$index}}-sexualOrientation"><b>Sexual Orientation</b>: {{Profile.sexualOrientation.value}}</p>
+                                              <p id="mentor-{{$index}}-gender"><b>Gender</b>: {{Profile.gender.value}}</p>
+                                              <p id="mentor-{{$index}}-ethnicity"><b>Ethnicity</b>: {{Profile.ethnicity.value}}</p>
+                                              <p id="mentor-{{$index}}-city"><b>City</b>: {{Profile.location.city}}</p>
+                                              <p id="mentor-{{$index}}-bio"><b>Bio</b>: {{Profile.bio}}</p>
 
 
                                             </td>

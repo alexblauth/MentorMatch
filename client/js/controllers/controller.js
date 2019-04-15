@@ -4,6 +4,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 
     /* Unique identifier for current user */
     $scope.jobOther;
+    $scope.menteeString = "mentee-";
+    $scope.mentorString = "mentor-"
     $scope.detailedInfo = {
       email: "",
       name: {
@@ -103,7 +105,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       });
       console.log(id);
 
-
+   
       /* Create new date via update */
       Listings.create($scope.detailedInfo)
           .then(function (response)
@@ -125,6 +127,120 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
           });
     };
 
+
+    $scope.displayProfile = function (index,listing,list){
+      if(listing.industry.value==""||listing.industry.value=="--")
+      {
+        document.getElementById(list+""+index+"-job").style.display = "none";
+      }
+      else
+      {
+      document.getElementById(list+""+index+"-job").style.display = "table-row";
+      }
+
+      if(listing.ethnicity.value==""||listing.industry.value=="--")
+      {
+        document.getElementById(list+""+index+"-ethnicity").style.display = "none";
+      }
+      else
+      {
+      document.getElementById(list+""+index+"-ethnicity").style.display = "table-row";
+      }
+
+      if(listing.sexualOrientation.value==""||listing.industry.value=="--")
+      {
+        document.getElementById(list+""+index+"-sexualOrientation").style.display = "none";
+      }
+      else
+      {
+      document.getElementById(list+""+index+"-sexualOrientation").style.display = "table-row";
+      }
+
+      if(listing.gender.value==""||listing.industry.value=="--")
+      {
+        document.getElementById(list+""+index+"-gender").style.display = "none";
+      }
+      else
+      {
+      document.getElementById(list+""+index+"-gender").style.display = "table-row";
+      }
+
+      if(listing.bio==""||listing.industry.value=="--")
+      {
+        document.getElementById(list+""+index+"-bio").style.display = "none";
+      }
+      else
+      {
+      document.getElementById(list+""+index+"-bio").style.display = "table-row";
+      }
+
+      if(list==$scope.mentorString){
+        if(listing.mentorStrength1.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-strength1").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-strength1").style.display = "table-row";
+        }
+        
+        if(listing.mentorStrength2.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-strength2").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-strength2").style.display = "table-row";
+        }
+
+        if(listing.mentorStrength3.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-strength3").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-strength3").style.display = "table-row";
+        }
+      }
+      //only displayed in potentail mentee
+      if(list==$scope.menteeString){
+        if(listing.menteeGoal1.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-goal1").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-goal1").style.display = "table-row";
+        }
+        if(listing.menteeGoal2.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-goal1").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-goal1").style.display = "table-row";
+        }
+        if(listing.menteeGoal3.value==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-goal1").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-goal1").style.display = "table-row";
+        }
+      }
+      if(listing.location.city==""||listing.industry.value=="--")
+        {
+          document.getElementById(list+""+index+"-city").style.display = "none";
+        }
+        else
+        {
+        document.getElementById(list+""+index+"-city").style.display = "table-row";
+        }
+        
+
+
+    }
 
     $scope.deleteListing = function (id)
     {
